@@ -1,0 +1,49 @@
+/*******************************
+          RESPONSIVE
+*******************************/
+
+@media (max-width:1024px){
+	body{
+	  &:before{
+	    background: url('../images/coming/bg-header-large.png') -667px -3px no-repeat;
+	  }	
+	}
+	main{
+		&.coming{
+			section, aside{ width: 100%; }
+			section{
+				padding: 0.6em 0 2.2em;
+				footer{
+					padding:.5em .5em 5.5em; 
+				}
+			}
+			aside{ 
+				text-align: center;
+				p{ margin: .5em !important; }
+			}
+		}
+	}
+}
+
+@media (max-width:500px){
+	body{
+	  &:before{
+	    background: url('../images/coming/bg-header-large.png') -667px -3px no-repeat;
+	  }	
+	}
+	main{
+		&.coming{
+			h1{ 
+				padding: .5em; 
+				a{ width: 100%; }
+			}
+			h2{ margin: 0 0 0 58%; }
+			section{
+				padding: 0.6em 0 2.2em;
+				footer{
+					padding:.5em .5em 5.5em;
+				}
+			}
+		}
+	}
+}

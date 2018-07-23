@@ -1,0 +1,114 @@
+﻿
+.transit(@properties: all, @secs: 0.3s){ 
+  -webkit-transition: @properties @secs; 
+  -o-transition: @properties @secs; 
+  transition: @properties @secs; 
+}
+.d-middle{ display: inline-block; vertical-align: middle; }
+.d-top{ display: inline-block; vertical-align: top; }
+.b-sizing{ box-sizing: border-box; }
+body,html{ 
+  background-color: #4077A2; font-size:1em; font-family: 'Neutra Display'; font-weight: 500; font-style: normal; color: #000;
+}
+body{
+  &:before{
+    content:''; background: url('../images/coming/bg-header-large.png') 37% -3px no-repeat; width:100%; height: 239px; position: absolute; left: 0; top: 0; z-index: 1; .transit(background, @secs: 0.3s);
+  }
+}
+main{
+  max-width: 1024px; position: relative; margin: 0 auto; /*background: url('../images/coming/bg-content.png') 0 0 no-repeat;*/
+  &.coming{
+    &:before{
+      /*content:''; background: url('../images/coming/bg-header-large.png') 0 0 no-repeat; width:100%; height: 237px; position: absolute; left: 0; top: 0; z-index: 1;*/
+    }
+    > *{ z-index: 9;; position: relative; }
+    h1{
+      padding:1.6em 2.2em 0; 
+      a{ 
+        width: 419px; .transit(width, @secs: 0.3s);
+        img{ width: 100%; }
+      }
+    }
+    h2{ 
+      border-radius: 123px; width: 123px; height: 123px; background-color: #F58220; text-align: center; font-size: 1.75em; line-height: 0.9em; margin: -0.8em 13em 0; .transit(margin, @secs: 0.3s);
+      &:before{
+        content:''; height: 100%; width: 0; .d-middle;
+      }
+      span{ .d-middle; padding: 0 0.6em; }
+    }
+    section{
+      width: 56%; .d-top; text-align: center; padding:2.2em 0; .transit(all, @secs: 0.3s);
+      > p{
+        strong{ color: #fff; font-size: 3.875em; text-transform: uppercase; padding:0; }
+      }
+      footer{
+        padding: 5.5em 0;
+        > *{ color: #fff; font-size: 1.625em; font-style: normal; }
+        > a{
+          margin-top: .2em;
+        }
+        p{
+          &.social{ padding-top: .4em; } 
+          a{ 
+            color: #fff; .d-middle; .transit(color, @secs: 0.3s);
+            &:hover{
+              color:#000;
+              i{ background-color: #000; color: #fff; }
+            }
+          }
+          i{  
+            color: #000; .d-middle; border-radius:25px; width: 25px; height: 25px; .b-sizing; background-color: #fff; font-size:.6em; margin: 0 0.15em 0 0.3em; .transit(all, @secs: 0.3s);
+            &:before{ .d-middle; }
+            &:after{ content:''; height: 100%; width: 0; .d-middle; }
+          }
+        }
+      }
+    }
+    aside{
+      width: 41%; .d-top; margin-top: -6.7em; .transit(width, @secs: 0.3s);
+      p{
+        .d-top; text-align: center; position: relative;
+        &._ballon-01{
+          background: url('../images/coming/ballon-01.png') 0 0 no-repeat; width: 177px; height: 137px; margin: 0 0 0 -0.8em; z-index: 1;
+          span{ margin-top: 1.4em; }
+        }
+        &._ballon-02{
+          background: url('../images/coming/ballon-02.png') 0 0 no-repeat; width: 129px; height: 92px; margin: 1.4em 0 0 3.1em; z-index: 8;
+          span{ margin-top: .8em; }
+        }
+        &._ballon-03{
+          background: url('../images/coming/ballon-03.png') 0 0 no-repeat; width: 170px; height: 129px; margin: -3.3em 0 0 4.8em; z-index: 7; 
+          span{ margin-top: 1em; color: #000; font-size: 2em; font-weight: bold;  }
+        }
+        &._ballon-04{
+          background: url('../images/coming/ballon-04.png') 0 0 no-repeat; width: 187px; height: 144px; margin: -5.6em 0 0 14.2em; z-index: 6; 
+          span{ margin-top: .85em; color: #000; font-size: 2em; font-weight: bold;  }
+        }
+        &._ballon-05{
+          background: url('../images/coming/ballon-05.png') 0 0 no-repeat; width: 234px; height: 132px; margin: -3.4em 0 0 -2.1em; z-index: 5;
+          span{ margin-top: .75em; color: #000; font-size: 2em; font-weight: bold;  }
+        }
+        &._ballon-06{
+          background: url('../images/coming/ballon-06.png') 0 0 no-repeat; width: 144px; height: 131px; margin: 1.3em 0 0 -5.4em; z-index: 4; 
+          span{ margin-top: 1.55em; color: #000; font-size: 1.468em; font-weight: bold;  }
+        }
+        &._ballon-07{
+          background: url('../images/coming/ballon-07.png') 0 0 no-repeat; width: 148px; height: 170px; margin: -0.8em 0 0 -1.7em; z-index: 3; 
+          span{ margin-top: .95em; font-size: 2em; font-weight: bold; padding: 0 0.5em; }
+        }
+        &._ballon-08{
+          background: url('../images/coming/ballon-08.png') 0 0 no-repeat; width: 207px; height: 99px; margin: -0.8em 0 0 2em; z-index: 1;
+          span{ margin-top: 0.9em; }
+        }
+
+        &:before{
+          content:''; height: 100%; width: 0; .d-middle;
+        }
+        span{ font-size: 1.375em; color: #fff; text-transform: uppercase; .d-top; }
+      }
+    }
+  }
+
+}
+
+@import "import.less";
